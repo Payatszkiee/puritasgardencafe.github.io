@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+  --mainPink: #EFC3A4;
+  --mainYellow: #0E0504;
+  --mainBlack: #000;
+  --mainGrey: rgb(238, 238, 238);
+  --mainWhite: #fff;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+.banner-title {
+  color: whitesmoke;
+  font-weight: 900;
+  -webkit-text-stroke: rgba(3, 38, 114, 0.753) 2px;
+}
+.heading{
+    font-size: 9rem;
+    text-transform: uppercase;
+    color:transparent;
+    -webkit-text-stroke: .05rem var(--main-color);
+    letter-spacing: .2rem;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+}
+
+.heading span{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color:var(--main-color);
+    font-size: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    padding:.9rem 1.5rem;
+    border-radius: var(--border-radius);
+    color:var(--main-color);
+    background: none;
+    border:var(--border);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    border-radius: var(--border-radius-hover);
+    border:var(--border-hover);
+}
+
+.header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+}
+
+.header .logo{
+    color:var(--main-color);
+    font-size: 2.3rem;
+}
+
+.header .logo i{
+    padding-left: .5rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.7rem;
+    color:var(--main-color);
+}
+
+.header .btn{
+    margin-top: 0;
+}
+.row{
+  display: flex;
+}
+
+#menu-btn{
+    font-size: 3rem;
+    color:var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+.h1, h1 {
+  font-size: 50px;
+}
+.store {
+  background-image: linear-gradient(#2d9120ad,rgba(1, 13, 82, 0.945)), url(images/bg4.jpg);
+}
+
+.btn-black {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: bolder;
+  font-weight: 900;
+  border-radius: 20px;
+  transition: all 0.5s;
+
+}
+
+.btn-black:hover {
+  font-size: 24px;
+  color: rgb(222, 255, 242);
+  background-color: #035800b6;
+  border: #000 2px black;
+  border-radius: 20px;
+  transition: all 0.5s;
+
+}
+@media (max-width: 767px){
+  .pleasegumanaka{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1px;
+    transform: translateX(67px);
+  }
+  .btn-black{
+    display: block
+  }
+}
+@media (max-width:620px){
+  .pleasegumanaka{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1px;
+    transform: translateX(57px);
+  }
+  .btn-black{
+    display: block
+  }
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.ml-auto, .mx-auto {
+  margin-left: auto!important;
+  padding-top: 55px;
+}
+
+.img-container{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-container:hover .store-item-icon{
+  transform: translate(0,0);
+  border: 2px white ridge;
+}
+
+.store-item-icon:hover{
+  color:var(--mainWhite);
+  
+}
+
+.store-img{
+  transition: all 1s ease-in-out;
+  
+}
+
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+
+
+.store-item-icon{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainYellow);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+
+.store-item-value{
+  color: var(--mainYellow);
+}
+
+.col-10 img{
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  border: 10px #000000 ;
+  border-style: groove;
+}
+.card-body{
+  border: black 5px solid;
+}
+#store-item-name{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+  font-weight: 800;
+}

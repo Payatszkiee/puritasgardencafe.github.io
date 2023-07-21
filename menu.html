@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/effd3867de.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="headermenu.css">
+  <link rel="stylesheet" href="menustyle.css">
+  <link href="img/puritas-logo.png" rel="icon">
+  <script src="index.js"></script>
+  <script def src="transition.js"></script>
+  <title> PURITAS MENU </title>
+</head>
+
+
+<body>
+
+  <section class="headmenu">
+    <nav>
+      <a href="#"><img class="logo" src="img/pgtext.png"></a>
+      <i class="fa-solid fa-bars" id="openToggle" onclick="openNavBar()"></i>
+      <div class="nav-links">
+        <i class="fa-solid fa-xmark" id="closeToggle" onclick="closeNavBar()"></i>
+        <ul>
+          <li><a href="index.html"> HOME </a></li>
+          <li><a href="gallery.html"> GALLERY </a></li>
+          <li><a href="abourpuritas.html"> ABOUT US </a></li>
+          <li><a href="https://www.facebook.com/gardencafe23"> VISIT US </a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </section>
+  <section id="store" class="store py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize"> <strong class="banner-title "> PURITA'S MENU</strong></h1>
+        </div>
+      </div>
+
+      <div class="row pleasegumanaka">
+        <div class=" col-lg-8 mx-auto d-flex pleasegumanaka justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="all">All</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="platter">PLATTER MENU</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="coffee">COFFEE'S</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="others">OTHERS</a>
+        </div>
+      </div>
+
+      <!----Menu Item-->
+      <div class="row" id="store-items">
+        <!-----Sinigang na Bangus-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Sinigang na Bangus.jpg" class="card-img-top store-img" />
+
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Sinigang na Bangus</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">500</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Tapsilog-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Tapsilog.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Tapsilog</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">120</strong></h5>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Fried Chicken Wings-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Fried chicken wings .jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Chicken Wings</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">125</strong></h5>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Liempo-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Liempo.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Liempo</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">125</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Roasted Whole Chicken-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Roasted whole chicken .jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Whole Roasted Chicken</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">400</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Sinigang na Manok-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Sinigang na manok.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Sinigang na Manok</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">600</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Sizzling Sisig-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Sizzling sisig.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Sizzling Sisig</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">300</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Shanghai-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Lumpiang shanghai .jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Shanghai</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">350</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Sinigang na Baboy-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Siniganv na baboy.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Sinigang na Baboy</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">480</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Crispy Kare-Kare-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Crispy kare kare.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Crispy Kare-Kare</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">600</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Crispy Pata-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Crispy pata.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Crispy Pata</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">800</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!--Caldereta-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Caldereta.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Caldereta</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">500</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Bulalo.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Bulalo</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">600</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Calamares-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Calamares.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Calamares</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">350</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Double Choco Chips-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item coffee" data-item="coffee">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/double choco chips.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Double Chocolate Chips</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">129</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Strawberry-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item coffee" data-item="coffee">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Strawberry frappe .jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Strawberry n Cream</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">129</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Mocha-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item coffee" data-item="coffee">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Mocha frappe .jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Mocha</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">129</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-----Macha-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item coffee" data-item="coffee">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Macha frappe .jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Matcha</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">99</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Sinigang na Hipon-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item platter" data-item="platter">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Sinigang na Hipon.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Sinigang na Hipon</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">600</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Potato Gems-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item others" data-item="others">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Potato gems.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Potato Gems</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">69</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Crinkle Cut Fries-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item others" data-item="others">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Crinkle cut fries .jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Crinkle-Cut Fries</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">99</strong></h5>
+              </div>
+            </div>
+          </div>
+
+          <!-----End Of Card-->
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Fruit Salad-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item others" data-item="others">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Fruit Salad.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Fruit Salad</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">45</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+        <!-----Leche Flan-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item others" data-item="others">
+          <div class="card">
+            <div class="img-container">
+              <img src="img/Leche Flan.jpg" class="card-img-top store-img" />
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Leche Flan</h5>
+                <h5 class="store-item-value">₱<strong id="store-item-price" class="font-weight-bold">150</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----End Of Card-->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="menu.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

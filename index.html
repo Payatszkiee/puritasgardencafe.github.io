@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Puritas Garden Cafe.com</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="img/puritas-logo.png" rel="icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bahnschrift:wght@300;400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/effd3867de.js" crossorigin="anonymous"></script>
+  
+    <script src="game.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EIm7XKKwkLeMbYjMg");
+      })();
+    </script>
+ 
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="#"><img class="logo" src="img/pgtext.png"></a>
+      <i class="fa-solid fa-bars" id="openToggle" onclick="openNavBar()"></i>
+      <div class="nav-links">
+        <i class="fa-solid fa-xmark" id="closeToggle" onclick="closeNavBar()"></i>
+        <ul>
+          <li><a href="menu.html">Products</a></li>
+          <li><a href="#products"> Best Offer </a></li>
+          <li><a href="aboutpuritas.html">About</a></li>
+          <li><a href="https://www.facebook.com/gardencafe23"> Visit Us </a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="text-box">
+      <h1> PURITA'S GARDEN CAFE </h1>
+      <p>"  WHERE THE FOOD TELLS A STORY  "</p>
+      <a href="#aboutus"><button class="shop">Book now</button></a>
+    </div>
+  </section>
+
+  
+  </div>
+  </section>
+
+  <section class="products" id="products">
+    <h1> Best Products</h1>
+    <p class="quote">Here's the list of our Best Products
+    </p>
+
+    <div class="product-row">
+        <div class="product-info hide">
+          <div>
+            <img class="product-1" src="img/Liempo.jpg">
+          </div>
+          <div class="info2">
+            <p class="product-brand">Liempo</p>
+            <p class="product-description">Pork</p>
+            <p class="price">&#8369 125.00</p>
+          </div>
+        </div>
+
+        <div class="product-info hide">
+          <div>
+            <img class="product-1" src="img/Siniganv na baboy.jpg">
+          </div>
+          <div class="info2">
+            <p class="product-brand">Sinigang na Baboy</p>
+            <p class="product-description">Pork</p>
+            <p class="price">&#8369 480.00</p>
+          </div>
+        </div>
+  
+        <div class="product-info hide">
+          <div>
+            <img class="product-1" src="img/Sizzling sisig.jpg">
+          </div>
+          <div class="info2">
+            <p class="product-brand">Sisig</p>
+            <p class="product-description">pork</p>
+            <p class="price">&#8369 300.00</p>
+          </div>
+        </div>
+  
+        <div class="product-info hide">
+          <div>
+            <img class="product-1" src="img/Crispy kare kare.jpg">
+          </div>
+          <div class="info2">
+            <p class="product-brand">Crispy Kare-kare</p>
+            <p class="product-description"> beef </p>
+            <p class="price">&#8369 600.00</p>
+          </div>
+        </div>
+  
+        <div class="product-info hide">
+          <div>
+            <img class="product-1" src="img/double choco chips.jpg">
+          </div>
+          <div class="info2">
+            <p class="product-brand">Double Chocolate Chips</p>
+            <p class="product-description"> frappe </p>
+            <p class="price">&#8369 129.00</p>
+          </div>
+        </div>
+  
+        <div class="product-info hide">
+          <div>
+            <img class="product-1" src="img/Strawberry frappe .jpg">
+          </div>
+          <div class="info2">
+            <p class="product-brand">Strawberries n Cream</p>
+            <p class="product-description"> frappe </p>
+            <p class="price">&#8369 230.00</p>
+          </div>
+        </div>
+
+        <div class="product-info hide">
+          <div>
+            <img class="product-1" src="img/Fruit Salad.jpg">
+          </div>
+          <div class="info2">
+            <p class="product-brand">Fruit Salad</p>
+            <p class="product-description"> dessert </p>
+            <p class="price">&#8369 45.00</p>
+          </div>
+        </div>
+
+        <div class="product-info hide">
+          <div>
+            <img class="product-1" src="img/Leche Flan.jpg">
+          </div>
+          <div class="info2">
+            <p class="product-brand">Leche Flan</p>
+            <p class="product-description"> dessert </p>
+            <p class="price">&#8369 150.00</p>
+          </div>
+        </div>
+    </div>  
+      <div class="view-btn">
+        <center>
+          <a href="menu.html"> <button> VIEW MORE </button></a>
+        </center>
+      </div>
+  </section>
+
+<section class="booking-phase" id="aboutus">
+  <div class="booking">
+    <div class="container border mt-3 bg-light">
+      <div class="row">
+        <div class="col-md-6 p-5 bg-primary text-white">
+          <h1 class="inter">Interested?</h1>
+          <h4>
+              For more concern and inquiries you can leave a message here!
+          </h4>
+        </div>
+        <div class="col-md-6 border-left py-3">
+          <h1>Leave us a Message</h1>
+          <div class="form-group">
+            <h5 for="name">Name</h5>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="email">Email</h5>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="alksoloap@gmail.comx"
+            />
+          </div>
+          <div class="form-group">
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="form-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.394062624273!2d120.74741557392977!3d14.28852188464339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd872c2c3f2b5b%3A0x1b068beb83b44d20!2sPuritas%20Garden%20Cafe!5e0!3m2!1sen!2sph!4v1689401744094!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+    
+      <img src="puritas garden.png" alt="Logo">
+      <h2>Purita's Garden Cafe</h2>
+    </div>
+    <div class="footer-info">
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://www.facebook.com/gardencafe23">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: TeamPuritas@gmail.com</p>
+        <p>Phone: 0918 647 6264</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-social">
+
+    <a href="https://www.facebook.com/gardencafe23"><img src="fblogo.png" alt="Facebook"></a>
+    <a href="https://instagram.com/puritasgardencafe?igshid=NTc4MTIwNjQ2YQ=="><img src="iglogo.png" alt="Instagram"></a>
+  </div>
+</footer>
+ 
+
+  <script src="index.js"></script>
+  <script defer src="scrollTransition.js"></script>
+
+</body>
+</html>
